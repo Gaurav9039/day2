@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width:100%;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    background: url("black.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+#overlay1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+#center1{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    
+}
+#center1 h1{
+    font-size: 20px;
+    font-family: "Anurati";
+    letter-spacing: 10px;
+}
+#center1 p{
+    font-family: "Gilroy";
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#center1 button{
+    height: 30px;
+    width: 150px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s linear;
+
+}
+#right{
+    height:100%;
+    width: 50%;
+    background: url("white.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#overlay2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+#center2{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    text-align: center;
+    
+}
+#center2 h1{
+    font-size:20px ;
+    font-family: "Anurati";
+    letter-spacing: 10px;
+}
+#center2 p{
+    font-family: "Gilroy";
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#center2 button{
+    height: 30px;
+    width: 150px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color:white;
+    transition: all .5s linear;
+}
+#center1 button:hover,#center2 button:hover{
+    border-radius: 20px;
+}
